@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable = no">
+        <meta name="author" content="Michel Junior Delanoue et Mouhamed Camara">
+        <meta name="description" content="Reproduction d'une partie du site de l'IPSL">
+        <link rel="shortcut icon" href="assets/logo-ipsl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:1024px)" href="styleMW1024.css">
+        <link rel="stylesheet" href="styleMW767.css" media="screen and (max-width:767px)">
+        <script src="https://kit.fontawesome.com/27ad2b4f60.js" crossorigin="anonymous"></script>
+        <title>IPSL website homePage</title>
+    </head>
+    <body>
+        <div class ="band-marron band-top"></div>
+        <header>
+            <nav>
+                <div id="hide"></div>
+                <div id="div-hamburger-logo">
+                    <div id="hamburger-menu">
+                        <label for="toggle"></label>
+                        <input type="checkbox" name="toggle" id="toggle">
+                    </div>
+                    <img class="logo" src="assets/logo-ipsl.png" alt="Logo IPSL">
+                </div>
+                <ul id="navigation-link">
+                    <li id="li-dropdown1"><span>IPSL</span> <i class="fa-solid fa-sort-down"></i>
+                        <!--Nous allons utiliser ces deux elements labels et chekbox pour pouvoir decteter le clik et faire ainsi le menu pour les version tablets-->
+                        <label for="click1"></label>
+                        <input type="checkbox" name="click-detector" class="click" id="click1">
+                        <ul class="dropdown dropdown1">
+                            <li><a href="#">Presentation</a></li>
+                            <li><a href="#">Personnel enseignant et de recherche</a></li>
+                            <li><a href="#">Personnel administratif</a></li>
+                            <li><a href="#">Organigramme</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation-link-simpleLi">Cycle Préparatoire Intégré</li>
+                    <li id="li-dropdown2"><span>Cycles ingénieurs</span> <i class="fa-solid fa-sort-down"></i>
+                        <label for="click2"></label>
+                        <input type="checkbox" name="click-detector" class="click" id="click2">
+                        <ul class="dropdown dropdown2">
+                            <li><a href="#">Genie electromecanique</a></li>
+                            <li><a href="#">Genie civil</a></li>
+                            <li><a href="#">Genie informatique et telecom</a></li>
+                        </ul>
+                    </li>
+                    <li id="li-dropdown3"><span>Ressources</span> <i class="fa-solid fa-sort-down"></i>
+                        <label for="click3"></label>
+                        <input type="checkbox" name="click-detector" class="click" id="click3">
+                        <ul class="dropdown dropdown3">
+                            <li><a href="#">Le Fab lab</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation-link-simpleLi">Partenaires</li>
+                </ul>
+                <a id="contact-link" href="#">Contact</a>
+            </nav>
+            <div id="banner">
+                <div class="background-overlay"></div>
+                <div id="container">
+                    <aside>
+                        <i class="fa-regular fa-rectangle-list" style="color: #a32e00; font-size: 62px;"></i>
+                        <h3>Résultats concours d'entrée 2022-2023</h3>   
+                        <ul>
+                            <li><a href="#">Liste principale</a></li>
+                            <li><a href="#">Liste d'attente</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </header>
+
+        <section id="section-directeur">
+            <div>
+                <h2>INSTITUT POLYTECHNIQUE DE SAINT-LOUIS</h2>
+                <h1>Mot de bienvenue</h1>
+                <p>
+                    L’Institut Polytechnique de Saint-Louis (IPSL), est l’école d’ingénieurs de l’université Gaston Berger 
+                    de Saint-Louis. L’offre de formation de l’IPSL couvre actuellement trois cursus d’ingénieur de conception
+                    dans les spécialités génie civil, génie mécanique et génie informatique-télécommunications.
+                </p>
+                <p>
+                    Sur le plan historique, l’institut est créé par les pouvoirs publics, par décret n°2010-1455 du 5 novembre 2010
+                    et a ouvert ses portes à sa première cohorte en octobre 2012.
+                </p>
+                <p>
+                    Sur le plan réglementaire, l’IPSL est depuis janvier 2019, par décret n° 2019-109, élevé au rang académique des
+                    grandes écoles polytechniques tout en l’ouvrant aux mutations imposées par le système Licence, Master et
+                    Doctorat (LMD) et du développement scientifique et technologique.
+                    <div id="lireSuite"><a href="#">Lire suite >></a></div>
+                </p>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/fallilou-coundoul.jpg" alt="photo du directeur de l'ipsl">
+                    <div class ="band-marron section-directeur-band"></div>
+                </div>
+                <h3><span class="h3-span1-section-directeur">Falilou Coundoul</span> <span class="h3-span2-section-directeur">DIRECTEUR</span></h3>
+            </div>
+        </section>
+
+        <section id="section-performance">
+            <div class="background-overlay"></div>
+            <div>
+                <img src="assets/logo-ipsl-fil.png" alt="logo ipsl blanc">
+                <p>
+                    Nos critères de performance sont l’insertion des diplômés sur le marché du travail, l’ouverture à 
+                    l’international, la recherche et la place de l’entrepreneuriat.
+                </p>
+                <hr>
+            </div>
+        </section>
+
+        <section id="formation">
+            <h1><span>FORMATION</span> <span>Nos filères</span></h1>
+            <div class="formation-box">
+                <div class="formation-box-item">
+            
+                    <div class="circle-img"><img src="assets/building-regular.svg" alt="logo building"></div>
+                    <h2>Génie civil</h2>
+                    <p>
+                        Former des ingénieurs opérationnels, capables de concevoir et de mettre en œuvre des moyens
+                        matériels et humains nécessaires à l’acte de construire ...
+                    </p>
+                    <a href="">Découvrir</a>
+                </div>
+                <div class="formation-box-item">
+                    
+                    <div class="circle-img"><img src="assets/bolt-lightning-solid.svg" alt="logo bolt"></div>
+                    <h2>Génie électromécanique</h2>
+                    <p>
+                        Former des ingénieurs polyvalents dans les domaines de l’électrique et de la mécanique. La
+                        formation offerte est pluridisciplinaire (mécanique, électricité, électronique, automatique)...
+                    </p>
+                    <a href="">Découvrir</a>
+                </div>
+                <div class="formation-box-item">
+                    <div class="circle-img"><img src="assets/satellite-dish-solid.svg" alt=""></div>
+                    <h2>Génie informatique</h2>
+                    <p>
+                        Donner aux élèves ingénieurs des compétences dans les domaines complémentaires qui leur
+                        permettent d’être en phase avec l’avancée technologique
+                    </p>
+                    <a href="">Découvrir</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="join_ipsl">
+            <div class="background-overlay"></div>
+            <div id="join-container">
+                <h1>Rejoindre l'IPSL</h1>
+            <div class="join_ipsl-box">
+                <div class="join_ipsl-box-item">
+                    <img src="assets/verified.png" alt="verifie">
+                    <h2><a href="">Concours d'entrée</a></h2>
+                    <p>L’admission des étudiants en première année du cycle préparatoire intégré ...</p>
+                </div>
+                <div class="join_ipsl-box-item">
+                    <img src="assets/verified.png" alt="verifie">
+                    <h2><a href="">Formation payante</a></h2>
+                    <p>Peuvent être admis en premier année du cycle ingénieur, soit après examen de dossiers ...</p>
+                </div>
+                <div class="join_ipsl-box-item">
+                    <img src="assets/verified.png" alt="verifie">
+                    <h2><a href="">Admission</a></h2>
+                    <p>Le cycle ingénieur est accessible aux étudiants du cycle préparatoire ou sur concours à ...</p>
+                </div>
+                <div class="join_ipsl-box-item">
+                    <img src="assets/verified.png" alt="verifie">
+                    <h2><a href="">Débouchés</a></h2>
+                    <p>L'institut est tourné vers la formation professionnelle dans les domaines ..</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="actu">
+            <h1>Actualité</h1>
+            <div class="actu-box">
+                <div class="actu-box-item">
+                    <img src="assets/batiment-ipsl-1-768x365.jpg" alt="batiment">
+                    <h2><a href="" id="actu_text">Appel à candidature formation payante</a>  <span>20 octobre 2022</span> </h2>
+                    <a href="" id="actu_lire">Lire >></a>
+                </div>
+                <div class="actu-box-item">
+                    <img src="assets/2022_CA_IPSL_9_GF-768x512.jpg" alt="2022 CA IPSL">
+                    <h2><a id="actu_text" href="">Cérémonie d’installation du Conseil d’Administration de l’IPSL</a> <span>30 avril
+                            2022</span></h2>
+                    <a href="" id="actu_lire">Lire >></a>
+                </div>
+                <div class="actu-box-item">
+                    <img src="assets/CABINE_IPSL_KHADIM_4-767x1024.jpg" alt="CABINE IPSL">
+                    <h2><a href="" id="actu_text">Innovation : un élève ingénieur de l’IPSL réalise une cabine de désinfectant pour lutter
+                        contre la Covid-19.</a> <span>26 avril 2022</span></h2>
+                    <a href="" id="actu_lire">Lire >></a>
+                </div>
+            </div>
+            <div id="actu-link"><a href="" id="actualite">Toute l'actualité</a></div>
+        </section>
+
+        <section id="fablab">
+           
+            <div id="fablab-container">
+                <div class="fablab-item">
+                    <h1><span id="ipsl_span">IPSL</span> <br> <span id="fablab_span">Le Fab Lab</span></h1>
+                    <p>
+                        Le Fab Lab de L’IPSL a pour mission de promouvoir les nouvelles technologies, leur utilisation et de
+                        donner accès à une culture scientifique à tous nos élèves ingénieurs.                
+                    </p>
+                    <p>Il a également pour vocation de favoriser l’invention, la création et l’innovation.</p>
+        
+                   <div id="fablab_ipsl_blanc"><img src="assets/logo-ipsl-blanc.png" alt="logo ipsl blanc"></div> 
+                </div>
+                <div class="fablab-item">
+                    <img  src="assets/fablab-2048x1283.png" alt="fablab" width="20px">
+                    <a href="#">Découvrir</a>
+                </div>
+            </div>
+            <div class="background-overlayV2"></div>
+        </section>
+
+        <section id="pfe">
+            <h1>Projets de Fin d'Etudes</h1>
+            <div class="pfe-box">
+                <div class="pfe-box-item">
+                    <a href=""><img src="assets/papa-oumar-thiam-768x543.jpeg" alt="pfe de Papa Oumar"></a>
+                    <h2><a href="">PFE : Papa Oumar Thiam</a> <span>9 novembre 2022</span></h2>
+                </div>
+                <div class="pfe-box-item">
+                    <a href=""><img src="assets/ndeye-ngone-wade-768x543.jpeg" alt="pfe de Ngone wade"></a>
+                    <h2><a href="">PFE : Ndèye Ngoné WADE</a> <span>22 juin 2022</span></h2>
+                </div>
+                <div class="pfe-box-item">
+                    <img src="assets/abdoulaye-koita-768x542.jpeg" alt="pfe de abdoulaye koita">
+                    <h2><a href="">PFE : Abdoulaye KOITA </a><span>14 juin 2022</span></h2>
+                </div>
+            </div> 
+        </section>
+
+        <section id="partenaires">
+            <section id="partenaires">
+                <figure>
+                    <figcaption>Nos partenaires</figcaption>
+                    <div class="more-image">
+                    <img src="assets/logo-5-1.png" alt="drapeau du senegal">
+                    <img src="assets/logo-4-1.png" alt="technosol ingenierie">
+                    <img src="assets/logo-3-1.png" alt="ceamitic">
+                    <img src="assets/logo-2-1.png" alt="saed">
+                    <img src="assets/logo-1-1.png" alt="total energy">
+                    <img src="assets/logo-6.png" alt="universite gaston berger">
+                    <img src="assets/logo-5-1.png" alt="drapeau du senegal">
+                    <img src="assets/logo-4-1.png" alt="technosol ingenierie">
+                    <img src="assets/logo-3-1.png" alt="ceamitic">
+                    <img src="assets/logo-2-1.png" alt="saed">
+                    <img src="assets/logo-1-1.png" alt="total energy">
+                    <img src="assets/logo-6.png" alt="universite gaston berger">
+                    </div>
+                    
+                </figure>
+        </section>
+        <div class="address_footer">
+            <address class="address">
+                <div class="address-item">
+                    <div class="address-img"><img src="assets/phone-solid.svg" alt="telephone"></div>
+                    <p>
+                        <h2>Téléphone
+                        <span class="numero">+221 33 960 00 39</span></h2>
+                    </p>
+                </div>
+                <div class="address-item">
+                    <div class="address-img"><img src="assets/envelope-solid.svg" alt="email"></div>
+                    <p>
+                        <h2>Email
+                        <span>ipsl@ugb.edu.sn</span></h2>
+                    </p>
+                </div>
+                <div class="address-item">
+                    <div class="address-img"><img src="assets/location-dot-solid.svg" alt="location"></div>
+                    <p>
+                        <h2>Adresse
+                        <span>Université Gaston Berger</span></h2>
+                    </p>
+                </div>
+            </address>
+            <footer>
+                <div class="footer-box">
+                    <div class="footer-box-item">
+                        <h2>Abonnement Newsletters</h2>
+                        <p>pour rester informé des concours, appels à candidatures et autres informations de l'Institut</p>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="submit" value="OK">
+                        </div>
+                    </div>
+                    <div class="footer-box-item">
+                        <h2>Formations</h2>
+                        <ul>
+                            <li><a href="">Cycle Préparatoire Intégré</a></li>
+                            <li><a href="">Cycle Electromécanique</a></li>
+                            <li><a href="">Cycle Informatique Télécom</a></li>
+                            <li><a href="">Cycle Génie Civil</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box-item">
+                        <h2>Liens</h2>
+                        <ul>
+                            <li><a href="#">Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation</a></li>
+                            <li><a href="#">Université Gaston Berger</a></li>
+                            <li><a href="#">ANAQ-SUP</a></li>
+                            <li><a href="#">CAMES</a></li>
+                        </ul>
+                        <address>
+                            <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                        </address>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">
+                    <span>Copyright © 2022 - Centre de Calcul Ousmane Seck</span>
+                    <img src="assets/logo-ipsl-blanc.png" alt="logo-ipsl-blanc">
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

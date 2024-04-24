@@ -1,0 +1,426 @@
+/*NavBar style*/
+:root{
+    --color-redMarron : rgb(163,46,0);
+}
+
+.band-top{
+    position: relative;
+    z-index: 45;
+}
+
+#contact-link{
+    position: relative;
+    z-index: 103;
+}
+
+#hamburger-menu{
+
+    display: block;
+}
+
+#hamburger-menu:has(label:hover)::after,#hamburger-menu:has(label:hover)::before,#hamburger-menu:has(label:hover) #toggle{
+    background-color: var(--color-redMarron) ;
+}
+
+#div-hamburger-logo{
+    display: flex;
+    align-items: center;
+    column-gap: 4vw;
+    margin-left: 10px;
+    position: relative;
+    z-index: 103;
+    height: 100%;
+    background-color: white;
+
+}
+
+.logo{
+
+    width: 485px;
+    height: 100px;
+}
+
+nav{
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+#hide{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 102;
+}
+
+#navigation-link{
+
+    display: block;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    z-index: 40;
+    background-color: white;
+    top: 120px;
+    left: 0;
+    padding-right: 0;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+   
+
+}
+
+
+nav:has(#toggle:checked) #navigation-link{
+   transform: translateY(0%);
+    
+}
+
+#navigation-link li:hover{
+
+    color: white;
+    background-color: var(--color-redMarron);
+}
+
+#navigation-link > li{
+   padding:10px 0 10px 0; 
+   display: flex;
+   justify-content: space-between;
+   height: max-content;
+   min-height: 50px;
+   position: relative;
+   z-index: 0;
+  
+}
+
+nav a{
+
+    transition: none;
+}
+.dropdown li{
+    height: 50px;
+    padding-left: 20px;
+}
+
+/*Gestion responsive du des li des .dropdown*/
+@media  screen and (max-width:361px) {
+    .dropdown li{
+
+        font-size: 5vw;
+    }
+}
+
+.dropdown li:hover{
+    background-color: var(--color-redMarron);
+    color: white;
+
+}
+
+.dropdown{
+    display: block;
+    box-shadow: none;
+    position: relative;
+    z-index: 101;
+    top: 25px;
+    height: 0;
+    line-height: 0;
+    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 300ms ease-in-out;   
+}
+
+
+label[for="click1"],label[for="click2"],label[for="click3"], .click{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label[for="click1"],label[for="click2"],label[for="click3"]{
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.click{
+    visibility: hidden;
+}
+
+#li-dropdown1:has(.click:checked) .dropdown1{
+    height: 210px;
+
+}
+
+#li-dropdown2:has(.click:checked) .dropdown2{
+    height: 160px;
+}
+
+#li-dropdown3:has(.click:checked) .dropdown3{
+    height: 60px;
+}
+
+#li-dropdown1 span , #li-dropdown1 i,#li-dropdown2 span , #li-dropdown2 i,#li-dropdown3 span , #li-dropdown3 i{
+    position: absolute;
+    z-index: 23;
+}
+
+#li-dropdown1 span,#li-dropdown2 span,#li-dropdown3 span{
+    left: 20px;
+}
+
+.navigation-link-simpleLi{
+    padding-left: 20px!important;
+}
+
+#li-dropdown1 i,#li-dropdown2 i,#li-dropdown3 i{
+    right: 20px;
+}
+
+/*Fin navBar style */
+
+
+/*section mot-directeur */
+#section-directeur{
+    flex-direction: column;
+}
+
+#section-directeur > div:first-child{
+    padding: 48px;
+}
+
+#section-directeur img{
+
+    width: 80%;
+}
+#section-directeur > div:last-child{
+
+    margin-right: 0;
+}
+#section-directeur div:last-child > div{
+
+    justify-content: space-around;
+}
+
+#section-directeur h3{
+
+    left: calc(95% - 209px);
+    
+}
+
+.section-directeur-band{
+    width: 120px;
+}
+
+/*Fin section-mot directeur*/
+
+/* Section Footer */
+.footer-box{
+    height: 600px;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+.footer-box-item:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 110px;
+    height: calc(30% + 120px);
+}
+.footer-box-item:last-child{
+
+    width: 35%;
+}
+.footer-box-item:nth-child(2),.footer-box-item:last-child{
+    height: calc(70% - 120px);
+    padding-top: 0;
+}
+.footer-box-item:nth-child(2) ul,.footer-box-item:last-child ul{
+
+    margin-left: 20px;
+}
+
+footer address{
+    margin: 15px 0 0 12px;
+}
+.footer-box-item:nth-child(2){
+
+    padding-left: 30px;
+}
+
+footer h2{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+}
+
+.footer-box-item:first-child div{
+    width: 100%;
+    text-align: center;
+}
+
+footer input[type="submit"]{
+    width: 20%;
+   
+}
+
+footer input[type="email"]{
+    width: 50%;
+}
+
+.address-item:has(img[alt="location"]){
+
+    display: none;
+}
+
+.address{
+    height: 8rem;
+}
+
+figure img{
+    -webkit-animation: slide-animation 10s infinite ease;
+            animation: slide-animation 10s infinite ease;/*animation pour le defilement des images*/
+}
+
+@-webkit-keyframes slide-animation {
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    44% {
+        transform: translateX(-200%);
+    }
+
+    58%{
+        transform: translateX(-300%);
+    }
+
+  72%{
+    transform: translateX(-400%);
+  }
+
+  86%{
+    transform: translateX(-500%);
+  }
+    100%{
+        transform: translateX(-600%);
+    }
+
+    
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    44% {
+        transform: translateX(-200%);
+    }
+
+    58%{
+        transform: translateX(-300%);
+    }
+
+  72%{
+    transform: translateX(-400%);
+  }
+
+  86%{
+    transform: translateX(-500%);
+  }
+    100%{
+        transform: translateX(-600%);
+    }
+
+    
+}
+
+/*Fin footer */
+
+/*Section partenaires */
+#partenaires{
+    height: 420px;
+}
+
+@media  screen and (max-width:994px) {
+    figure img{
+
+        width: 20%;
+        height: 20%;
+    }
+    figure div{
+
+        overflow: hidden;
+    }
+}
+
+/*Fin section partenaires*/
+
+/*Section projet de fin d'etude*/
+.pfe-box{
+   flex-wrap: wrap;
+}
+
+.pfe-box-item{
+    width: 47.7%;
+}
+
+/*Fin section projet de fin d'etude*/
+
+/*Section fablab */
+#fablab{
+
+    height: max-content;
+}
+.fablab-item:first-child,.fablab-item:nth-child(2){
+    width: 90%;
+}
+.fablab-item:nth-child(2){
+    margin-top: 10px;
+}
+.fablab-item:first-child{
+    margin-top: 50px;
+}
+#fablab-container{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+/*Fin section fablab*/
+
+/*Section Actualite */
+.actu-box{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.actu-box-item{
+    width: 47.8%;
+
+}
+
+/*Fin section actualite */
+
+/*Section rejoindre ipsl*/
+.join_ipsl-box{
+
+    width: calc(100% - 40px);
+}
+
+#join_ipsl h1{
+    font-size: 1.8rem;
+}
+
+/*Fin section rejoindre ipsl*/

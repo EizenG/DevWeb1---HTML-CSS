@@ -1,0 +1,314 @@
+/*navBar*/
+
+#contact-link{
+
+    display: none;
+}
+
+#div-hamburger-logo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo{
+
+    width: 60vw;
+    height: 70px;
+}
+
+nav{
+    padding: 0;
+}
+
+#div-hamburger-logo{
+
+    margin: 0 5px;
+}
+
+/*Fin*/
+
+/*Banner aside */
+#banner aside{
+    width: 100%;
+}
+/*banner asise*/
+
+/*section mot-directeur */
+#section-directeur div:last-child > div{
+   
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    row-gap: 20px;
+}
+
+#section-directeur img{
+
+    width: 100%;
+}
+
+.section-directeur-band{
+    width: 100%;
+    height: 56px;
+}
+
+#section-directeur h3{
+    top: -150px;
+    left: calc(90% - 209px);
+    
+}
+
+/*Fin section-directeur*/
+
+/*section-performance*/
+#section-performance div:last-child{
+    height: 75%;
+    width: 100%;
+}
+
+#section-performance img{
+
+    align-self: flex-end;
+}
+
+#section-performance hr{
+    width: 45vw;
+}
+
+@media screen and (max-width:477px) {
+    
+    #section-performance img{
+        height: 24vw;
+        width: 100%;
+    }
+
+}
+
+#section-performance{
+
+    height: 450px;
+    align-items: center;
+}
+
+
+
+/*Fin section-performance*/
+
+/*Section footer*/
+.address{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 12rem;
+    width: 100%;
+    position: static;
+}
+
+.address h2{
+
+    font-size: min(5vw,1rem);
+}
+.address-img{
+    margin-left: 10px;
+}
+
+footer input[type="submit"]{
+    transform: translate(0,0);
+    padding: 0;
+}
+
+footer input[type="submit"],footer input[type="email"]{
+    width: 100%;
+    height: 40px;
+}
+footer input[type="email"]{
+    margin-bottom: 10px;
+}
+
+footer{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+.footer-box{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.footer-box-item:first-child{
+
+    padding-top: 80px;
+   
+}
+
+.footer-box-item:nth-child(2),.footer-box-item:last-child,.footer-box-item:first-child,.footer-box-item:first-child div{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+.footer-box-item:nth-child(2),.footer-box-item:last-child{
+    width: 100%;
+   padding: 50px 0 0;
+}
+
+.footer-box-item:nth-child(2) ul,.footer-box-item:last-child ul{
+
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+footer address{
+    margin-left: 0;
+}
+footer hr{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    width: 100%;
+    height: 90px;
+    flex-direction: column-reverse;
+    text-align: center;
+    row-gap: 10px;
+}
+
+/* Fin section footer*/
+
+/*Section partenaires */
+#partenaires{
+    height: 360px;
+    width: 98%;
+}
+
+@media screen and (max-width:711px){
+    figure img{
+
+        width: 50%;
+        height: 50%;
+    }
+
+    #partenaires{
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    figcaption{
+        font-size: 5vw;
+        padding: 30px 0;
+    }
+}
+
+/*Fin section partenaires*/
+
+/*Section projet de fin d'etude*/
+.pfe-box{
+    flex-direction: column;
+ }
+ 
+ .pfe-box-item{
+     width: 100%;
+ }
+
+ #pfe h1{
+
+    font-size: x-large;
+ }
+
+ .pfe-box-item h2{
+    font-size: medium;
+}
+
+.pfe-box-item h2 span{
+    font-size: small;
+}
+ 
+ /*Fin section projet de fin d'etude*/
+
+ /*Section fablab*/
+    
+    #fablab_ipsl_blanc img{
+
+        height: 16vw;
+        width: 60%;
+     }
+
+     #ipsl_span{
+       font-size: large;
+    }
+    #fablab_span{
+       font-size: max(25px,5vw);
+    }
+
+    #fablab a{
+        display: block;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+ /*Section fablab Fin */
+
+ /*Section Actualite */
+.actu-box{
+    flex-direction: column;
+}
+.actu-box-item{
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+#actu img[alt="CABINE IPSL"]{
+    height: 400px;
+}
+
+#actu-link{
+    width: 95%;
+    margin: auto;
+    text-align: start;
+}
+
+#actu h1{
+    font-size: 30px;
+}
+
+/*Fin section actualite */
+
+/*Section rejoindre  ipsl*/
+.join_ipsl-box{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,calc(25% - 30px));
+}
+
+.join_ipsl-box{
+    margin-left: 20px;
+}
+#join_ipsl h1{
+    margin-left: 0;
+    font-size: 1.6rem;
+}
+#join_ipsl h2{
+   font-size: 1.3rem;
+}
+/*Fin section rejoindre ispl*/
+
+/*Section formation*/
+ .formation-box{
+        flex-direction: column;
+}
+
+.formation-box-item{
+
+    width: 100%;
+    height: 480px;
+}
+
+/*Fin section formation*/
